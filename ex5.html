@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            font-family: monospace;
+            color: #3bb843;
+        }
+
+        body {
+            background-color: black;
+            padding: 1rem;
+        }
+        #p9{
+            transition: all 1.5s ease-in-out 0s;
+        }
+        #p9:hover{
+            transform: skew(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+
+    <script>
+        const mainn = async () => {
+            let p1 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(true);
+                    document.querySelector('#p1').innerHTML = "Initialize hacking phone..."
+                }, 3000);
+            }).then((value) => {
+                // setTimeout(() => {
+                //     document.querySelector('#p2').innerHTML = "Model : Samsung m32"
+                // }, 1000);
+            }).then((value) => {
+                setTimeout(() => {
+                    document.querySelector('#p3').innerHTML = "Hacking Instagram..."
+                }, 3000);
+            }).then((value) => {
+                setTimeout(() => {
+                    document.querySelector('#p4').innerHTML = "Username found : _meet003";
+                }, 7000);
+            }).then((value) => {
+                setTimeout(() => {
+                    document.querySelector('#p5').innerHTML = "Conneting to Facebook..."
+                }, 9000);
+            }).then((value) => {
+                setTimeout(() => {
+                    document.querySelector('#p6').innerHTML = "facebook connection successfully!"
+                }, 10000);
+            }).then((value) => {
+                setTimeout(() => {
+                    document.querySelector('#p7').innerHTML = "fetching photos..."
+                }, 11500);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "ERROR : large file facing..";
+                    p8.style.color = "red";
+                }, 13000);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "";
+                }, 13500);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "ERROR : large file facing..";
+                    p8.style.color = "red";
+                }, 14000);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "";
+                }, 14500);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "Photos fetched succesfully! "
+                    p8.style.color = "#3bb843";
+                }, 16000);
+            }).then((value) => {
+                setTimeout(() => {
+                    document.querySelector('#p9').innerHTML = "YOUR PHONE HACKED";
+                    document.querySelector('#p9').style.fontSize ="xx-large";
+
+                }, 18000);
+            })
+        }
+        mainn()
+    </script>
+</body>
+
+</html>
