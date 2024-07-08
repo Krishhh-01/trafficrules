@@ -22,6 +22,7 @@
 <body>
     <p id="p1"></p>
     <p id="p2"></p>
+     <p id="p10"></p>
     <p id="p3"></p>
     <p id="p4"></p>
     <p id="p5"></p>
@@ -43,8 +44,12 @@
              }, 1000);
             }).then((value) => {
                 setTimeout(() => {
+                     document.querySelector('#p10').innerHTML = "Location catched!"
+             }, 2000);
+            }).then((value) => {
+                setTimeout(() => {
                     document.querySelector('#p3').innerHTML = "Hacking Instagram..."
-                }, 3000);
+                }, 2500);
             }).then((value) => {
                 setTimeout(() => {
                     document.querySelector('#p4').innerHTML = "Username found : v_patel210";
@@ -56,22 +61,11 @@
             }).then((value) => {
                 setTimeout(() => {
                     document.querySelector('#p6').innerHTML = "facebook connection successfully!"
-                }, 10000);
+                }, 10500);
             }).then((value) => {
                 setTimeout(() => {
                     document.querySelector('#p7').innerHTML = "fetching photos..."
                 }, 11500);
-            }).then((value) => {
-                setTimeout(() => {
-                    let p8 = document.querySelector('#p8');
-                    p8.innerHTML = "ERROR : large file facing..";
-                    p8.style.color = "red";
-                }, 13000);
-            }).then((value) => {
-                setTimeout(() => {
-                    let p8 = document.querySelector('#p8');
-                    p8.innerHTML = "";
-                }, 13500);
             }).then((value) => {
                 setTimeout(() => {
                     let p8 = document.querySelector('#p8');
@@ -86,15 +80,26 @@
             }).then((value) => {
                 setTimeout(() => {
                     let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "ERROR : large file facing..";
+                    p8.style.color = "red";
+                }, 15000);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
+                    p8.innerHTML = "";
+                }, 15500);
+            }).then((value) => {
+                setTimeout(() => {
+                    let p8 = document.querySelector('#p8');
                     p8.innerHTML = "Photos fetched succesfully! "
                     p8.style.color = "#3bb843";
-                }, 16000);
+                }, 17000);
             }).then((value) => {
                 setTimeout(() => {
                     document.querySelector('#p9').innerHTML = "PHONE HACKED!!";
                     document.querySelector('#p9').style.fontSize ="xx-large";
 
-                }, 16500);
+                }, 17500);
             }).then((value) => {
                 setTimeout(() => {
                     document.querySelector('#p1').innerHTML ="";
@@ -106,7 +111,7 @@
                     document.querySelector('#p7').innerHTML ="";
                     document.querySelector('#p8').innerHTML ="";
                   document.querySelector('#p9').innerHTML ="";
-                }, 17500);
+                }, 18500);
             })
         }      
         mainn()
